@@ -1,0 +1,42 @@
+@import './color-theme';
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-color: $slate-gray;
+}
+
+.top
+{
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    background-color: $pure-white;
+    // height: 5.0rem;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+.default-text-box{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    
+    box-shadow: 
+    0 1.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 1.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 1.5px 1px rgba(0, 0, 0, 0.06),
+    0 2.3px 1.9px rgba(0, 0, 0, 0.072),
+    0 4.8px 3.4px rgba(0, 0, 0, 0.086),
+    0 4px 80px rgba(0, 0, 0, 0.12),
+    -4px -4px 4px  rgba(0, 0, 0, 0.25);
+}
+
+.default-button
+{
+    height: 38px;
+    background-color: $slate-gray;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

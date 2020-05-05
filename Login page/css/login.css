@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color: #EEEEEE;
+}
+
+.top {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+
+.default-text-box {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 1.8px 2.2px rgba(0, 0, 0, 0.034), 0 1.7px 5.3px rgba(0, 0, 0, 0.048), 0 1.5px 1px rgba(0, 0, 0, 0.06), 0 2.3px 1.9px rgba(0, 0, 0, 0.072), 0 4.8px 3.4px rgba(0, 0, 0, 0.086), 0 4px 80px rgba(0, 0, 0, 0.12), -4px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.default-button {
+  height: 38px;
+  background-color: #EEEEEE;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.parent-container {
+  height: 100;
+  width: 100%;
+  background-color: red;
+}
+
+.circle {
+  height: 45rem;
+  width: 45rem;
+  border-radius: 50%;
+  background-color: #F8C33C;
+  position: fixed;
+  top: 70%;
+  left: -8%;
+  z-index: -1;
+  box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+}
+
+.triangle {
+  position: fixed;
+  top: -5%;
+  left: 80%;
+  height: 20rem;
+  width: 30rem;
+  background-color: #c0392b;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+}
+
+.login-container {
+  height: 75vh;
+  width: 70%;
+  background-color: white;
+  background: linear-gradient(237.21deg, rgba(255, 254, 254, 0.69) 7.75%, #FFFEFE 21.38%, #FFFFFF 68.52%, rgba(255, 255, 255, 0) 88.6%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 4%;
+  z-index: 1;
+  display: flex;
+}
+
+.login-container__side-panel {
+  background: linear-gradient(210.67deg, #3EB7A6 44.49%, rgba(3, 130, 112, 0.52) 95.93%);
+  border-radius: 30px 0px 0px 30px;
+  width: 50%;
+  text-align: center;
+}
+.login-container__side-panel article {
+  color: white;
+  margin-top: 20%;
+}
+.login-container__side-panel article h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.login-container__side-panel article p {
+  margin: 0;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+.login-container__side-panel article button {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 1rem;
+}
+.login-container__side-panel .theme-circle-big {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(1, 139, 120, 0.99) 0%, rgba(196, 196, 196, 0) 100%);
+}
+.login-container__side-panel .theme-circle-medium-left {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(1, 139, 120, 0.99) 0%, rgba(196, 196, 196, 0) 100%);
+}
+.login-container__side-panel .theme-circle-medium-right {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(1, 139, 120, 0.99) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.login-container__login-panel {
+  width: 50%;
+  text-align: center;
+}
+.login-container__login-panel .panel-logo {
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.login-container__login-panel .login-panel__login {
+  width: 60%;
+  margin: auto;
+}
+.login-container__login-panel .login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.login-container__login-panel .login-form a {
+  font-size: 1.2rem;
+  color: #3EB7A6;
+  margin-top: 30px;
+}
+.login-container__login-panel .login-form input {
+  border: 2px solid white;
+  margin-bottom: 30px;
+}
+.login-container__login-panel .login-form input:hover {
+  border: 2px solid #3EB7A6;
+}
+.login-container__login-panel .login-form .btnForgot {
+  background-color: white;
+  border: none;
+  width: 80%;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 1.5px 10px rgba(0, 0, 0, 0.06), 0 2.3px 17.9px rgba(0, 0, 0, 0.072), 0 4.8px 33.4px rgba(0, 0, 0, 0.086), 0 4px 80px rgba(0, 0, 0, 0.12), -4px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.login-container__login-panel .login-form .btnForgot:hover {
+  border: 2px solid #3EB7A6;
+}
+.login-container__login-panel .login-form .btnlogin {
+  border: none;
+  background-color: #3EB7A6;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
+  margin: auto;
+  width: 100%;
+}
+.login-container__login-panel .login-form .btnlogin:hover {
+  background-color: #38a495;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Data Upload
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      .auto-style1 {
+        width: 173px;
+        text-align: left;
+      }
+
+      .auto-style2 {
+        text-align: left;
+        width: 370px;
+      }
+
+      .auto-style3 {
+        text-align: left;
+        font-size: large;
+      }
+
+      .auto-style4 {
+        width: 328px;
+        text-align: left;
+      }
+
+      .auto-style5 {
+        text-align: left;
+        width: 516px;
+      }
+    </style>
+  </head>
+  <body>
+    <div >           
+        <div style="display:flex; justify-content:center">
+            <div>
+                <h2>File Upload</h2>
+            </div>
+        </div>
+
+        <div>
+            <ol class="breadcrumb" style="background-color: white;">
+                <li>You are here:</li>
+                <li><a href="#">Adminstration</a></li>
+                <li class="active">File Upload</li>
+            </ol>
+        </div>
+       
+    </div>
+    <div style="border: 2px solid black;">
+       
+       
+      <div class="panel panel-primary " style="width: 50%; margin:auto; margin-top:50px; margin-bottom:50px; ">
+        <div class="panel-heading" style="background-color:#173570">
+          <h3 class="panel-title text-center">Upload a File</h3>
+        </div>
+        <div class="panel-body">
+          <form
+            method="post"
+            action="./FUpload.aspx?mid=1"
+            id="form1"
+            enctype="multipart/form-data"
+          >
+              <div class="alert alert-info text-center">
+                <strong>Info!</strong> Indicates a neutral informative change or
+                action.
+              </div>
+            
+            <!-- source field -->
+            <div style="width: 50%; margin:auto" class="" >
+                <div style="margin-bottom: 10px;">
+                    <label for="ddlType">Source</label>
+                    <select
+                    name="ddlType"
+                    onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlType\&#39;,\&#39;\&#39;)&#39;, 0)"
+                    id="ddlType"
+                    class="form-control"
+                  >
+                    <option selected="selected" value="csv"
+                      >CSV File Data</option
+                    >
+                    <option value="excel">Excel Data</option>
+                    <option value="sql">SQL Server Data</option>
+                    <option value="mysql">MySql Data</option>
+                    <option value="access">MsAccess Data</option>
+                  </select>
+                </div>
+
+                 <!-- File location field -->
+
+                <div style="margin-bottom: 20px;">
+                    <label for="FileUpload">File Location</label>
+                    <input
+                    type="file"
+                    name="FileUpload1"
+                    id="FileUpload1"
+                    class="form-control"
+                />
+                </div>   
+                <!-- button -->
+                <input
+                type="submit"
+                name="btlcsvUpload"
+                value="Import CSV Data File"
+                id="btlcsvUpload"
+                class="form-control"
+                style="background-color:#173570;color:white"
+              />
+              
+            </div>
+       
+          </form>
+        </div>
+        <div class="panel-footer">
+          <!-- Info! Indicates a neutral informative change or action. -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

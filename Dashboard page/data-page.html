@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <section>
+        <article class="btn" style="background-color:#3EB7A6;"><a href="http://">Step 1<br><span>File Upload</span></a></article>
+        <article><a href="http://">Step 2<br><span>Data Validation</span></a></article>
+        <article><a href="http://">Step 3<br><span>Auditing & Reporting</span></a></article>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" ><a href="#">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+    </section> -->
+
+
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" ><a style="background-color:" href="#fileUpload" aria-controls="fileUpload" role="tab" data-toggle="tab">File Upload</a></li>
+          <li role="presentation" class="active" ><a style="background-color: " href="#dataValidation" aria-controls="dataValidation" role="tab" data-toggle="tab">Data Validation</a></li>
+          <li role="presentation" ><a style="background-color: " href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Auditing & Reporting</a></li>
+          <!-- <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li> -->
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="fileUpload">
+            <div class="panel panel-primary " style="width: 50%; margin:auto; margin-top:50px; margin-bottom:50px; ">
+                <div class="panel-heading" style="background-color:#173570">
+                  <h3 class="panel-title text-center">Upload a File</h3>
+                </div>
+                <div class="panel-body">
+                  <form
+                    method="post"
+                    action="./FUpload.aspx?mid=1"
+                    id="form1"
+                    enctype="multipart/form-data"
+                  >
+                      <div class="alert alert-info text-center">
+                        <strong>Info!</strong> Indicates a neutral informative change or
+                        action.
+                      </div>
+                    
+                    <!-- source field -->
+                    <div style="width: 50%; margin:auto" class="" >
+                        <div style="margin-bottom: 10px;">
+                            <label for="ddlType">Source</label>
+                            <select
+                            name="ddlType"
+                            onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlType\&#39;,\&#39;\&#39;)&#39;, 0)"
+                            id="ddlType"
+                            class="form-control"
+                          >
+                            <option selected="selected" value="csv"
+                              >CSV File Data</option
+                            >
+                            <option value="excel">Excel Data</option>
+                            <option value="sql">SQL Server Data</option>
+                            <option value="mysql">MySql Data</option>
+                            <option value="access">MsAccess Data</option>
+                          </select>
+                        </div>
+        
+                         <!-- File location field -->
+        
+                        <div style="margin-bottom: 20px;">
+                            <label for="FileUpload">File Location</label>
+                            <input
+                            type="file"
+                            name="FileUpload1"
+                            id="FileUpload1"
+                            class="form-control"
+                        />
+                        </div>   
+                        <!-- button -->
+                        <input
+                        type="submit"
+                        name="btlcsvUpload"
+                        value="Import CSV Data File"
+                        id="btlcsvUpload"
+                        class="form-control"
+                        style="background-color:#173570;color:white"
+                      />
+                      
+                    </div>
+               
+                  </form>
+                </div>
+                <div class="panel-footer">
+                  <!-- Info! Indicates a neutral informative change or action. -->
+                </div>
+              </div>
+            </div>
+                <!-- _______________ Data Validation section___________________ -->
+          <div role="tabpanel" class="tab-pane" id="dataValidation" style="margin: 0;">
+              <div style="border:1px solid gray; margin:10px; height:90vh">
+        
+                    <form class="navbar-form"
+                     style="background-color:#173570;color:white; padding:10px; display:flex; justify-content:center"
+                     >
+                        <div class="form-group" style="width: 30%;margin-right:20px">
+                          <select class="form-control" style="width: 100%;">
+                              <option role="separator" class="divider">Select file</option>
+                              </select>
+                        </div>
+    
+                        <button type="submit" class="btn btn-default btn-primary" style="width:20%">Validate</button>
+                      </form>
+                  
+               
+              </div>
+          </div>
+           <!-- _______________ Auditing and Reporting section___________________ -->
+          <div role="tabpanel" class="tab-pane" id="messages">
+            <div style="display: flex; margin:10px; border: 1px solid gray; height:90vh">
+                <div style="width: 20%; border-right: 1px solid gray">
+                    <div class="text-center"
+                    style="background-color:#173570;color:white; padding:16px;"
+                    ><strong>All Uploaded Files</strong>               
+                    </div>
+                    <div class="text-center">
+                        <h4 class="active">File 1</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        <h4>File 2</h4>
+                        
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <div
+                    style="background-color:#173570;color:white; padding:10px;display:flex;justify-content:space-between; align-items:center"
+                    >
+                        <strong>Selected File: <span style="color:wheat">File 1</span></strong>
+                        <button type="submit" class="btn btn-default btn-primary" style="width:20%">Validate</button>
+                                  
+                    </div>
+                   
+                </div>
+              </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="settings">y</div>
+        </div>
+      
+      </div>
+</body>
+</html>

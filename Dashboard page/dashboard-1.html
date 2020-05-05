@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div
+      style="display:flex; justify-content:space-between;align-items:center; box-shadow: 4px 4px 4px gray; padding:15px"
+    >
+      <!--logo -->
+      <div>
+        <img src="./assets/truecover_Logo_with_quote.png" alt="logo" height="50px" />
+      </div>
+
+      <!-- menu bar -->
+      <div>
+        <form method="post" action="./fwahleft.aspx" id="form1">
+          <div class="aspNetHidden">
+            <input
+              type="hidden"
+              name="__VIEWSTATE"
+              id="__VIEWSTATE"
+              value="n0bX5vzGq6O3tlqO8g9SgVwDylfL2RWGsD/XHixo9dpRD88QRHJW9rGzzR21LUhCvZX2bygTJ2Wgzz7BAHOeoCvdMlkrID2uGuDUmjftacs="
+            />
+          </div>
+
+          <div class="aspNetHidden">
+            <input
+              type="hidden"
+              name="__VIEWSTATEGENERATOR"
+              id="__VIEWSTATEGENERATOR"
+              value="1EF9A7E4"
+            />
+          </div>
+          <div>
+              <!-- Risk management -->
+            <a
+              class="btn btn-default "
+              role="button"
+              href="analytics.aspx?mid=6"
+              target="workingFrame"
+              >Risk Management</a
+            >
+            <!-- Fraud performance -->
+            <a
+              class="btn btn-default "
+              role="button"
+              href="analytics.aspx?mid=4"
+              target="workingFrame"
+            >
+              Fraud Performance</a>
+
+            <!-- Analytics -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Analytics <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li> <a href="analytics.aspx?mid=1" target="workingFrame">Claim Analytics</a></li>
+                  <li> <a href="analytics.aspx?mid=2" target="workingFrame">Disease Analytics</a></li>
+                  <li> <a href="analytics.aspx?mid=3" target="workingFrame">Member Analytics</a></li>
+                  <li> <a href="analytics.aspx?mid=5" target="workingFrame">Network Analytics</a></li>
+                  <!-- <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li> -->
+                </ul>
+              </div>
+              <!-- Adminstration -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Adminstration <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li> <a href="data-page.html" target="workingFrame">File Upload</a></li>
+                  <li role="presentation" class=""><a href="#fileUpload" aria-controls="fileUpload" role="tab" data-toggle="tab">File Upload</a></li>
+                  <li><a href="DataManagement/DataValidation.aspx?mid=1" target="workingFrame">Data Validation</a></li>
+                  <li> <a href="DataManagement/DataAuditnRep.aspx?mid=1" target="workingFrame">Auditing and Reporting</a></li>
+                  <li><a href="RuleManagement/RuleExecution.aspx?mid=4"  target="workingFrame">Rule Execution</a></li>
+                  <li><a href="RuleManagement/RuleMasters.aspx?mid=1"    target="workingFrame">Rule Management</a></li>
+                  <li><a href="RuleEngine.aspx?mid=2"                   target="workingFrame">Model Management</a></li>
+                  <!-- <li role="separator" class="divider"></li>
+                  <li> <a href="analytics.aspx?mid=5" target="workingFrame">Network Analytics</a></li> -->
+                </ul>
+              </div>
+              
+           
+
+            <!-- Adminstration list -->
+            <div id="Data" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="FUpload.aspx?mid=1" target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;File Upload</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="DataManagement/DataValidation.aspx?mid=1"
+                    target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;Data Validation</a
+                  >
+                </li>
+
+                <li class="list-group-item">
+                  <a
+                    href="DataManagement/DataAuditnRep.aspx?mid=1"
+                    target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;Auditing and Reporting</a
+                  >
+                </li>
+
+                <li class="list-group-item">
+                  <a
+                    href="RuleManagement/RuleExecution.aspx?mid=4"
+                    target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;Rule Execution</a
+                  >
+                </li>
+
+                <li class="list-group-item">
+                  <a
+                    href="RuleManagement/RuleMasters.aspx?mid=1"
+                    target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;Rule Management</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="RuleEngine.aspx?mid=2" target="workingFrame"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;Model Management</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- logout button -->
+      <div class="panel-heading">
+        <a
+          class="btn"
+          style="background-color: #173570; color:white; border-radius:20px; width:100px"
+          role="button"
+          href="LogOut.aspx?mid=1"
+          target="workingFrame"
+          >Logout</a>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane active" id="fileUpload">
+      <div class="panel panel-primary " style="width: 50%; margin:auto; margin-top:50px; margin-bottom:50px; ">
+          <div class="panel-heading" style="background-color:#173570">
+            <h3 class="panel-title text-center">Upload a File</h3>
+          </div>
+          <div class="panel-body">
+            <form
+              method="post"
+              action="./FUpload.aspx?mid=1"
+              id="form1"
+              enctype="multipart/form-data"
+            >
+                <div class="alert alert-info text-center">
+                  <strong>Info!</strong> Indicates a neutral informative change or
+                  action.
+                </div>
+              
+              <!-- source field -->
+              <div style="width: 50%; margin:auto" class="" >
+                  <div style="margin-bottom: 10px;">
+                      <label for="ddlType">Source</label>
+                      <select
+                      name="ddlType"
+                      onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlType\&#39;,\&#39;\&#39;)&#39;, 0)"
+                      id="ddlType"
+                      class="form-control"
+                    >
+                      <option selected="selected" value="csv"
+                        >CSV File Data</option
+                      >
+                      <option value="excel">Excel Data</option>
+                      <option value="sql">SQL Server Data</option>
+                      <option value="mysql">MySql Data</option>
+                      <option value="access">MsAccess Data</option>
+                    </select>
+                  </div>
+  
+                   <!-- File location field -->
+  
+                  <div style="margin-bottom: 20px;">
+                      <label for="FileUpload">File Location</label>
+                      <input
+                      type="file"
+                      name="FileUpload1"
+                      id="FileUpload1"
+                      class="form-control"
+                  />
+                  </div>   
+                  <!-- button -->
+                  <input
+                  type="submit"
+                  name="btlcsvUpload"
+                  value="Import CSV Data File"
+                  id="btlcsvUpload"
+                  class="form-control"
+                  style="background-color:#173570;color:white"
+                />
+                
+              </div>
+         
+            </form>
+          </div>
+          <div class="panel-footer">
+            <!-- Info! Indicates a neutral informative change or action. -->
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

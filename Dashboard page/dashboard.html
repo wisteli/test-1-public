@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="./js/dashboard.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Top of the page -->
+    <header class="header border ">       
+            <!-- logo -->
+            <article>
+                <img src="./assets/truecover_Logo_with_quote.png" alt="logo">
+            </article>
+
+            <!-- Menu -->
+            <nav class="menu-bar border" style="border-color: red;">
+               <ul class="border" style="border-color: green;">
+                   <!-- Risk management menu -->
+                   <li  class="border" style="border-color: black;">
+                       <a href="#">
+                           <div onclick="selectMenu()">
+                               <span class="border">Risk Management</span>
+                           </div>
+                       </a>
+                    </li>
+                    <!-- Fraud performance menu -->
+                   <li  class="border" style="border-color: black;">
+                    <a href="#">
+                        <div>
+                            <span class="border">Fraud Performance</span>
+                        </div>
+                    </a>
+                 </li>
+                  <!-- Analytics menu -->
+                  <li  class="border" style="border-color: black;">
+                    <a href="#">
+                        <div>
+                            <span class="border">Analytics</span>
+                        </div>
+                    </a>
+                    <!-- nested sub-menu for Analytics menu -->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <span>Claim Analytics</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <span>Claim Analytics</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <span>Claim Analytics</span>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul>
+                 </li>
+                   <!-- Adminstration menu -->
+                   <li  class="border" style="border-color: black;">
+                    <a href="#">
+                        <div>
+                            <span class="border">Adminstration</span>
+                        </div>
+                    </a>
+                 </li>
+                   
+               </ul>
+            </nav>
+
+            <!-- logout btn -->
+            <button class="logout-button" id="btn-logout" onclick="logout()">Logout</button>
+    </header>
+    <main>
+        <!-- iframe goes here -->
+    </main>
+</body>
+</html>
